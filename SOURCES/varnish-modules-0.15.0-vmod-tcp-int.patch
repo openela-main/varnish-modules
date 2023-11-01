@@ -1,0 +1,13 @@
+diff --git a/src/vmod_tcp.c b/src/vmod_tcp.c
+index fee4bd3..e1c5dfa 100644
+--- a/src/vmod_tcp.c
++++ b/src/vmod_tcp.c
+@@ -174,7 +174,7 @@ vmod_set_socket_pace(VRT_CTX, VCL_INT rate)
+             sizeof(pacerate)) != 0)
+                 VSLb(ctx->vsl, SLT_VCL_Error, "set_socket_pace(): Error setting pace rate.");
+ 	else
+-                VSLb(ctx->vsl, SLT_VCL_Log, "vmod-tcp: Socket paced to %lu KB/s.", rate);
++                VSLb(ctx->vsl, SLT_VCL_Log, "vmod-tcp: Socket paced to %d KB/s.", pacerate);
+ 
+ #  ifndef NDEBUG
+         int retval;
