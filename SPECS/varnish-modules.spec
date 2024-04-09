@@ -85,8 +85,8 @@ make check VERBOSE=1
 
 
 %changelog
-* Mon Jul 26 2021 Luboš Uhliarik <luhliari@redhat.com> - 0.15.0-6
-- Related: #1982862 - rebuild for new varnish version
+* Thu Mar 28 2024 Luboš Uhliarik <luhliari@redhat.com> - 0.15.0-6
+- Related: RHEL-30378 - Rebase varnish to 6.0.13
 
 * Thu Apr 16 2020 Lubos Uhliarik <luhliari@redhat.com> - 0.15.0-5
 - Related: #1795673 - RFE: rebase varnish:6 to latest 6.0.x LTS
